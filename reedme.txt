@@ -1,0 +1,36 @@
+Para resolver esta prueba se creo un proyecto Maven (web) en netbeans, la url del proyecto es 
+https://github.com/victorpacheco3107/SpringMVC_MongoDB/tree/master/Prueba2Certicamara
+aquí se encuentran todos los archivos y carpetas necesarias para abrir el proyecto en netbeans si se desea.
+
+El archivo .war se encuentra dentro de la siguiente carpeta 
+https://github.com/victorpacheco3107/SpringMVC_MongoDB/tree/master/Prueba2Certicamara/target
+llamado certicamara-prueba-1.war
+Para que la aplicación funcione correctamente es necesario que el servidor de mongoDB este arriba. Para ello descargar
+mongoDB, crear el directorio c:\data\db, luego ejecutar el archivo mongod.exe
+
+No es necesario crear base de dato alguna, ya que la aplicación se encarga de eso, crea una bd llamada certicamara-prueba
+e inserta datos iniciales (dos bodegas, dos proveedores y dos produstos). La configuración de esto la encontramos
+en los siguientes archivos
+https://github.com/victorpacheco3107/SpringMVC_MongoDB/blob/master/Prueba2Certicamara/src/main/webapp/WEB-INF/spring-data.xml
+https://github.com/victorpacheco3107/SpringMVC_MongoDB/blob/master/Prueba2Certicamara/src/main/java/com/certicamara/prueba2/service/InitMongoService.java
+https://github.com/victorpacheco3107/SpringMVC_MongoDB/blob/master/Prueba2Certicamara/src/main/webapp/WEB-INF/spring.properties
+
+La ruta de los paquetes se encuentra en la siguiente url
+https://github.com/victorpacheco3107/SpringMVC_MongoDB/tree/master/Prueba2Certicamara/src/main/java/com/certicamara/prueba2
+Se crearon seis paquetes
+   aop        (Se encuentra una clase utilitaria para menejar el log)
+   controller (Contiene las clases controller)
+   domain     (contiene el modelo de la aplicación (los VOs o los POJOs))
+   dto        (Clases que implementan el patron DTO para aislar el dominio de la aplicación)
+   repository (Contiene las clases de acceso a datos)
+   service    (Clases con la logica de negocio)
+
+En la siguiente url se encuentran los archivos xml de configuración del proyecto mas la carpeta que contiene los jsp de 
+la aplicación
+https://github.com/victorpacheco3107/SpringMVC_MongoDB/tree/master/Prueba2Certicamara/src/main/webapp/WEB-INF
+Los jsp los podemos encontrar aquí
+https://github.com/victorpacheco3107/SpringMVC_MongoDB/tree/master/Prueba2Certicamara/src/main/webapp/WEB-INF/jsp
+Y por ultimo los archivos javascript los encontramos en la siguiente url
+https://github.com/victorpacheco3107/SpringMVC_MongoDB/tree/master/Prueba2Certicamara/src/main/webapp/resources/js
+
+
